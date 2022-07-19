@@ -8,6 +8,7 @@ import Footer from "../../components/Footer2";
 import SliderCarousel from "../../components/SliderCarousel";
 import SlideMedia from "../../components/SlideMedia";
 import NewsProduct from "../../components/NewsProduct";
+import CardProduct from "../../components/CardProduct";
 
 import headerImg from "../../assets/images/banner.svg";
 import {
@@ -18,6 +19,7 @@ import {
   Newsletter,
   MediaContainer,
   LatestNewsContainer,
+  CardContainer
 } from "./style";
 
 export default function Home() {
@@ -41,15 +43,19 @@ export default function Home() {
               </NavLink>
             </Title>
           </BannerContent>
-          <SliderCarousel/>
+          <CardContainer>
+            <CardProduct/>
+          </CardContainer>
+
+          <LatestNewsContainer>
+            <NewsProduct/>
+          </LatestNewsContainer>
 
           <MediaContainer>
             <SlideMedia/>
           </MediaContainer>
 
-          <LatestNewsContainer>
-            <NewsProduct/>
-          </LatestNewsContainer>
+          <SliderCarousel/>
 
           <Newsletter>
             <h3>Receba as novidades</h3>

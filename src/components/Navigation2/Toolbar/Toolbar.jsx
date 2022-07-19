@@ -8,12 +8,6 @@ import NavigationItems from "../NavItems/NavigationItems";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
 const ToolbarContainer = (props) => {
-  // const history = useHistory();
-
-  // function handleGoToHomePage() {
-  //   history.push("/");
-  // }
-
   return (
     <Toolbar>
       <DrawerToggle clicked={props.drawerToggleClicked} />

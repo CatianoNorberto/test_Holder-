@@ -53,7 +53,7 @@ export const Btns = styled.div`
       justify-content: center;
       align-items: center;
       padding: 10px 24px;
-      border: 2px solid #666B7B;
+      border: none;
       border-radius: 8px;
       text-transform: uppercase;
       font-family: 'Inter';
